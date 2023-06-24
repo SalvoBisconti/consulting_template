@@ -21,7 +21,7 @@ const Hamburger = (props: {
         text={` ${openMenu ? "text-4xl" : ""} `}
         align={` ${openMenu ? "items-center" : ""} `}
         setOpenMenu={setOpenMenu}
-        scroll={0}
+        scroll={80}
       />
     </div>
   );

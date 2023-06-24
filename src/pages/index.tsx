@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
+import DictionarySection from "@/components/dictionarySection";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
     >
       <Navbar />
       <Hero />
-      <Hero />
+      <DictionarySection />
     </main>
   );
 }

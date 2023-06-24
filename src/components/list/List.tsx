@@ -1,5 +1,4 @@
-import { Dispatch } from "react";
-import { useState } from "react";
+import { Dispatch, useState } from "react";
 
 const List = (props: {
   display: string;
@@ -49,7 +48,7 @@ const List = (props: {
             Servizi
             <span
               className={`absolute  -right-7 top-1 md:-right-4  md:top-0 transition-all ${
-                showSubtitle && "rotate-180 -translate-y-2 "
+                showSubtitle && "rotate-180 -translate-y-2  md:-translate-y-1 "
               } `}
             >
               {"^"}
@@ -59,7 +58,7 @@ const List = (props: {
         <ul
           className={`  text-xl flex flex-col items-end gap-1 mt-2 transition-all md:items-start md:absolute    ${
             !showSubtitle && " hidden"
-          } ${scroll > 0 && "md:bg-first md:p-2 rounded"}`}
+          } ${scroll > 80 && "md:bg-first md:p-2 rounded"}`}
         >
           <li onClick={someFunction}>
             <a
