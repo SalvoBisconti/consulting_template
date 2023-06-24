@@ -25,12 +25,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`h-[70px] z-10 bg-first fixed w-screen p-3  flex justify-between items-center transition-all duration-700 ${
-        scroll > 0 &&
-        " absolute h-[45px] bg-background md:shadow-sm md:shadow-first md:fixed "
+      className={`h-[60px] z-10 bg-trasparent fixed w-screen p-3  flex justify-between items-center transition-all duration-700 z-20 ${
+        scroll > 0 && " md:bg-first  md:fixed "
       }`}
     >
-      <h2 className="font-mono ">LOGO </h2>
+      <h2 className="text-white">LOGO </h2>
       <button
         className={` group md:hidden z-30 ${
           scroll > 0 && "fixed top-4 right-3"
@@ -72,21 +71,6 @@ const Navbar = () => {
       />
 
       <Hamburger openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      {/* <div
-        className={` ${
-          openMenu ? " right-[0px]  delay-75 " : "h-0 w-0    "
-        } z-20 fixed h-screen w-screen  bg-[#161a1d] top-[0px] right-[-1000px] p-3  flex justify-center items-center md:hidden  transition-all duration-1000`}
-      >
-        <List
-          display={` ${openMenu ? "block" : "hidden"} `}
-          direction={` ${openMenu ? "flex-col" : "flex-row"} `}
-          gap={` ${openMenu ? "gap-8" : ""} `}
-          height={` ${openMenu ? "h-1/2" : ""} `}
-          text={` ${openMenu ? "text-4xl" : ""} `}
-          align={` ${openMenu ? "items-center" : ""} `}
-          setOpenMenu={setOpenMenu}
-        />
-      </div> */}
     </div>
   );
 };
