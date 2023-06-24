@@ -9,8 +9,10 @@ const List = (props: {
   text: string;
   height: string;
   setOpenMenu: Dispatch<React.SetStateAction<boolean>>;
+  scroll: number;
 }) => {
-  const { display, direction, gap, align, text, height, setOpenMenu } = props;
+  const { display, direction, gap, align, text, height, setOpenMenu, scroll } =
+    props;
 
   const [showSubtitle, setShowSubtitle] = useState<boolean>(false);
 
@@ -57,7 +59,7 @@ const List = (props: {
         <ul
           className={`  text-xl flex flex-col items-end gap-1 mt-2 transition-all md:items-start md:absolute    ${
             !showSubtitle && " hidden"
-          }`}
+          } ${scroll > 0 && "md:bg-first md:p-2 rounded"}`}
         >
           <li onClick={someFunction}>
             <a

@@ -68,6 +68,7 @@ const Navbar = () => {
         text={` ${scroll > 0 ? "text-lg" : "text-xl"} `}
         align=""
         setOpenMenu={setOpenMenu}
+        scroll={scroll}
       />
 
       <Hamburger openMenu={openMenu} setOpenMenu={setOpenMenu} />
