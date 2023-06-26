@@ -11,12 +11,12 @@ const DictionarySection = () => {
 
           <h2 className="font-bold text-3xl"> Invertire</h2>
 
-          <h4> [in·ver·tì·re] verbo </h4>
+          <h4> [ in·ver·tì·re ] verbo </h4>
           <p className="italic text-[#484848] font-serif">
             1. Volgere o dirigere nel verso contrario: i. il moto, la marcia; i.
             la rotta di una nave, di un aeromobile, far prendere alla nave,
             all’aeromobile la direzione opposta a quella fino allora seguita;
-            determinare, provocare un’inversione (in accezioni tecniche)
+            determinare, provocare un’inversione (in accezioni tecniche).
           </p>
           <h2 className="absolute -bottom-12 -right-12 text-7xl font-serif">
             {" "}
