@@ -55,7 +55,7 @@ const List = (props: {
       <li className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
         <div className="" onClick={onHandleChangeStatus}>
-          <div className="flex  justify-between items-baseline hover:text-gray">
+          <div className="flex  justify-between items-baseline hover:text-gray  md:w-[88px]">
             <a className="md:hover:underline underline-offset-8 relative cursor-pointer">
               Servizi
               <span
@@ -77,7 +77,7 @@ const List = (props: {
         <ul
           className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0   ${
             !showSubtitle && " hidden"
-          } ${scroll > 80 && "md:bg-first md:p-2 rounded"}`}
+          } ${scroll > 80 && "md:bg-first md:p-2 mdrounded"}`}
         >
           <li onClick={someFunction}>
             <a

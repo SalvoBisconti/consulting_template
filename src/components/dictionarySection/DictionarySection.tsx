@@ -4,9 +4,9 @@ import "animate.css";
 
 const DictionarySection = () => {
   return (
-    <div className="w-screen h-[450px] md:h-[350px] flex justify-center items-center bg-second relative">
+    <div className="setPage bg-second relative ">
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
-        <div className="relative flex flex-col w-[70vw] md:w-[55vw] justify-center  gap-3 text-xl z-10 ">
+        <div className="setPageContent md:w-[55vw] z-10 ">
           <h2 className="absolute -top-6 -left-12 text-7xl font-serif"> "</h2>
 
           <h2 className="font-bold text-3xl"> Invertire</h2>

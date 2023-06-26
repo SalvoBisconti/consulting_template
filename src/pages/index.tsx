@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import DictionarySection from "@/components/dictionarySection";
+import AboutSection from "@/components/aboutSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <DictionarySection />
+      <AboutSection />
     </main>
   );
 }
