@@ -5,7 +5,12 @@ import "animate.css";
 const DictionarySection = () => {
   return (
     <div className="setPage bg-second relative ">
-      <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        animateOnce={true}
+        duration={1.5}
+        animatePreScroll={false}
+      >
         <div className="setPageContent md:w-[55vw] z-10 ">
           <h2 className="absolute -top-6 -left-12 text-7xl font-serif"> "</h2>
 
