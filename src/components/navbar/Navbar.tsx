@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <h2 className="text-white">LOGO </h2>
       <button className="group md:hidden z-30" onClick={onHandleClick}>
-        <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md ">
+        <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md ring-gray ">
           <div className="flex flex-col justify-between w-[24px] h-[24px] transform transition-all duration-300 origin-center overflow-hidden ">
             <div
               className={`bg-background h-[3px] w-8 transform transition-all duration-300 origin-left ${
