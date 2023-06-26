@@ -1,4 +1,6 @@
 import { Dispatch, useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 const List = (props: {
   display: string;
@@ -30,39 +32,56 @@ const List = (props: {
 
   return (
     <ul
-      className={`${display} ${direction} ${gap} ${align} ${text} ${height} flex md:flex  justify-evenly   w-1/2 text-white font-bold transition-all duration-1000`}
+      className={`${display} ${direction} ${gap} ${align} ${text} ${height} flex md:flex  justify-evenly   w-1/2 text-white font-bold transition-all duration-1000 -mt-[20vh] md:mt-0`}
     >
-      <li onClick={onHandleClose}>
-        <a className=" hover:underline underline-offset-8 " href="#home">
-          Home
-        </a>
-      </li>
-      <li onClick={onHandleClose}>
-        <a className=" hover:underline underline-offset-8" href="#chiSono">
-          Chi sono
-        </a>
-      </li>
-      <li>
-        <div className="" onClick={onHandleChangeStatus}>
-          <a className="hover:underline underline-offset-8 relative">
-            Servizi
-            <span
-              className={`absolute  -right-7 top-1 md:-right-4  md:top-0 transition-all ${
-                showSubtitle && "rotate-180 -translate-y-2  md:-translate-y-1 "
-              } `}
-            >
-              {"^"}
-            </span>
+      <li onClick={onHandleClose} className="cursor-pointer">
+        <hr className="w-[95vw] p-1 md:hidden" />
+        <div className="flex  justify-between items-baseline hover:text-gray">
+          <a className=" md:hover:underline underline-offset-8 " href="#home">
+            Home
           </a>
+          <FaArrowRight className="md:hidden  text-xl" />
+        </div>
+      </li>
+      <li onClick={onHandleClose} className="cursor-pointer">
+        <hr className="w-[95vw] p-1 md:hidden" />
+        <div className="flex  justify-between items-baseline hover:text-gray">
+          <a className=" md:hover:underline underline-offset-8" href="#chiSono">
+            Chi sono
+          </a>
+          <FaArrowRight className="md:hidden text-xl" />
+        </div>
+      </li>
+      <li className="cursor-pointer">
+        <hr className="w-[95vw] p-1 md:hidden" />
+        <div className="" onClick={onHandleChangeStatus}>
+          <div className="flex  justify-between items-baseline hover:text-gray">
+            <a className="md:hover:underline underline-offset-8 relative cursor-pointer">
+              Servizi
+              <span
+                className={`hidden absolute  -right-7 top-1 md:-right-4 md:block md:top-0 transition-all cursor-pointer ${
+                  showSubtitle &&
+                  "rotate-180 -translate-y-2  md:-translate-y-1 "
+                } `}
+              >
+                {"^"}
+              </span>
+            </a>
+            <MdOutlineArrowForwardIos
+              className={`md:hidden text-xl rotate-90 transition-all"  ${
+                showSubtitle && "-rotate-90"
+              } `}
+            />
+          </div>
         </div>
         <ul
-          className={`  text-xl flex flex-col items-end gap-1 mt-2 transition-all md:items-start md:absolute    ${
+          className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0   ${
             !showSubtitle && " hidden"
           } ${scroll > 80 && "md:bg-first md:p-2 rounded"}`}
         >
           <li onClick={someFunction}>
             <a
-              className="hover:underline underline-offset-8 relative z-30 "
+              className="md:md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#analisi"
             >
               Area analisi
@@ -70,7 +89,7 @@ const List = (props: {
           </li>
           <li onClick={someFunction}>
             <a
-              className="hover:underline underline-offset-8 relative z-30 "
+              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#pianificazione"
             >
               Pianificazione
@@ -78,7 +97,7 @@ const List = (props: {
           </li>
           <li onClick={someFunction}>
             <a
-              className="hover:underline underline-offset-8 relative z-30 "
+              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#investimenti"
             >
               Investimenti
@@ -86,7 +105,7 @@ const List = (props: {
           </li>
           <li onClick={someFunction}>
             <a
-              className="hover:underline underline-offset-8 relative z-30 "
+              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#altro"
             >
               Altro
@@ -100,15 +119,24 @@ const List = (props: {
           onClick={onHandleChangeStatus}
         ></div>
       </li>
-      <li onClick={onHandleClose}>
-        <a className="hover:underline underline-offset-8" href="#faq">
-          FAQ
-        </a>
+      <li onClick={onHandleClose} className="cursor-pointer">
+        <hr className="w-[95vw] p-1 md:hidden" />
+        <div className="flex  justify-between items-baseline hover:text-gray">
+          <a className="md:hover:underline underline-offset-8" href="#faq">
+            FAQ
+          </a>
+          <FaArrowRight className="md:hidden  text-xl" />
+        </div>
       </li>
-      <li onClick={onHandleClose}>
-        <a className="hover:underline underline-offset-8" href="#contatti">
-          Contatti
-        </a>
+      <li onClick={onHandleClose} className="cursor-pointer">
+        <hr className="w-[95vw] p-1 md:hidden" />
+        <div className="flex  justify-between items-baseline hover:text-gray">
+          <a className="md:hover:underline underline-offset-8" href="#contatti">
+            Contatti
+          </a>
+          <FaArrowRight className="md:hidden  text-xl" />
+        </div>
+        <hr className="w-[95vw] p-1 md:hidden" />
       </li>
     </ul>
   );

@@ -16,9 +16,9 @@ const Hamburger = (props: {
       <List
         display={` ${openMenu ? "block" : "hidden"} `}
         direction={` ${openMenu ? "flex-col" : "flex-row"} `}
-        gap={` ${openMenu ? "gap-8" : ""} `}
-        height={` ${openMenu ? "h-1/2" : ""} `}
-        text={` ${openMenu ? "text-4xl" : ""} `}
+        gap={` ${openMenu ? "gap-0" : ""} `}
+        height={` ${openMenu ? "h-1/3" : ""} `}
+        text={` ${openMenu ? "text-2xl" : ""} `}
         align={` ${openMenu ? "items-center" : ""} `}
         setOpenMenu={setOpenMenu}
         scroll={80}
