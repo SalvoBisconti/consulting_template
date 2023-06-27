@@ -2,7 +2,8 @@ import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import DictionarySection from "@/components/dictionarySection";
 import AboutSection from "@/components/aboutSection";
-
+import CarouselItem from "@/components/carouselItem";
+import ServiceSection from "@/components/serviceSection";
 export default function Home() {
   return (
     <main
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <DictionarySection />
       <AboutSection />
+      <ServiceSection />
     </main>
   );
 }

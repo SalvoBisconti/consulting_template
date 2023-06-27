@@ -3,14 +3,14 @@ import "animate.css";
 
 const AboutSection = () => {
   return (
-    <div className="setPage">
+    <div className="setPage " id="chiSono">
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}
         duration={1.5}
         animatePreScroll={false}
       >
-        <div className="setPageContent md:w-[65vw] text-center">
+        <div className="setPageContent md:w-[65vw] text-center ">
           <h3 className="font-bold text-3xl"> Chi sono ?</h3>
           <p className="">
             Sono Fabio Massi, classe 88, da sempre appassionato di mercati

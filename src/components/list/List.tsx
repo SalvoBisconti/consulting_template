@@ -1,6 +1,6 @@
 import { Dispatch, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { SlArrowDown } from "react-icons/sl";
 
 const List = (props: {
   display: string;
@@ -67,9 +67,9 @@ const List = (props: {
                 {"^"}
               </span>
             </a>
-            <MdOutlineArrowForwardIos
-              className={`md:hidden text-xl rotate-90 transition-all"  ${
-                showSubtitle && "-rotate-90"
+            <SlArrowDown
+              className={`md:hidden text-xl  transition-all"  ${
+                showSubtitle && "rotate-180 "
               } `}
             />
           </div>
