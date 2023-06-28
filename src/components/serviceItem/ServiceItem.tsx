@@ -30,7 +30,7 @@ const ServiceItem = (props: { data: serviceType }) => {
       >
         <div className=" flex justify-center content-center h-[100%]  ">
           <div className="shadow-xl  w-[90vw] h-auto self-center bg-white rounded-lg z-10 -translate-y-12 md:translate-y-0 md:w-[50vw]  md:-translate-x-14 ">
-            <h2 className="text-center text-3xl pt-5 font-bold">
+            <h2 className="text-center text-3xl pt-5 font-bold text-first">
               {data.title}
             </h2>
             <ul className=" p-8 ">
@@ -38,7 +38,7 @@ const ServiceItem = (props: { data: serviceType }) => {
                 return (
                   <li key={item.id} className="pb-4 ">
                     {item.subtitle && (
-                      <span className="-ml-4 text-xs mr-1">♦︎</span>
+                      <span className="-ml-4 text-xs mr-1 text-gray">♦︎</span>
                     )}
                     <h3 className="font-bold w-[100%] inline">
                       {item.subtitle}{" "}

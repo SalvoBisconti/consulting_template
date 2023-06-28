@@ -12,9 +12,15 @@ const DictionarySection = () => {
         animatePreScroll={false}
       >
         <div className="setPageContent md:w-[55vw] z-10 ">
-          <h2 className="absolute -top-6 -left-12 text-7xl font-serif"> "</h2>
+          <h2 className="absolute -top-6 -left-12 text-7xl font-serif text-first">
+            {" "}
+            "
+          </h2>
 
-          <h2 className="font-bold text-3xl"> Invertire</h2>
+          <h2 className="font-bold text-3xl text-first md:text-4xl">
+            {" "}
+            Invertire
+          </h2>
 
           <h4> [ in·ver·tì·re ] verbo </h4>
           <p className="italic text-[#484848] font-serif">
@@ -23,7 +29,7 @@ const DictionarySection = () => {
             all’aeromobile la direzione opposta a quella fino allora seguita;
             determinare, provocare un’inversione (in accezioni tecniche).
           </p>
-          <h2 className="absolute -bottom-12 -right-12 text-7xl font-serif">
+          <h2 className="absolute -bottom-12 -right-12 text-7xl font-serif text-first">
             {" "}
             "
           </h2>
