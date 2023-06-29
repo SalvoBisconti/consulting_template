@@ -38,7 +38,9 @@ const ServiceItem = (props: { data: serviceType }) => {
                 return (
                   <li key={item.id} className="pb-4 ">
                     {item.subtitle && (
-                      <span className="-ml-4 text-xs mr-1 text-gray">♦︎</span>
+                      <span className="-ml-4 text-[10px] mr-1 text-gray">
+                        ♦︎
+                      </span>
                     )}
                     <h3 className="font-bold w-[100%] inline">
                       {item.subtitle}{" "}

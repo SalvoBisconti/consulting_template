@@ -5,7 +5,7 @@ const ServiceSection = () => {
   return (
     <div>
       {service?.map((service) => (
-        <ServiceItem data={service} />
+        <ServiceItem data={service} key={service.id} />
       ))}
     </div>
   );

@@ -92,7 +92,7 @@ const List = (props: {
               className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#pianificazione"
             >
-              Pianificazione
+              Area pianificazione
             </a>
           </li>
           <li onClick={someFunction}>
@@ -100,7 +100,7 @@ const List = (props: {
               className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
               href="#investimenti"
             >
-              Investimenti
+              Area investimenti
             </a>
           </li>
           <li onClick={someFunction}>
