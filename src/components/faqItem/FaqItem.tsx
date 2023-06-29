@@ -1,6 +1,8 @@
 import { faqType } from "@/mocks/faq";
 import { SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 const FaqItem = (props: { data: faqType }) => {
   const { data } = props;
@@ -11,26 +13,35 @@ const FaqItem = (props: { data: faqType }) => {
   };
   return (
     <div className="cursor-pointer" onClick={onHandleShow}>
-      <div className="flex justify-between items-baseline ">
-        <h3 className="flex flex-row-reverse items-center font-bold ">
-          {data.question}
-          <h4 className="-ml-4 text-xs mr-3 text-gray inline">♦︎</h4>
-        </h3>
-        <div className="px-4">
-          <SlArrowDown
-            className={`text-xl  "  ${showQuestion && "rotate-180 "} `}
-          />
-        </div>
-      </div>
-      <div
-        className={`flex gap-4 pl-10 py-8 transition-all  ${
-          !showQuestion && "hidden"
-        }`}
+      <AnimationOnScroll
+        animateIn="animate__fadeInUp"
+        animateOnce={true}
+        duration={1.5}
+        animatePreScroll={false}
       >
-        <div className="bg-gray h-auto w-8 md:w-4"> </div>
-        <p>{data.answer} </p>
-      </div>
-      <hr className="text-gray mt-2" />
+        <div className="flex justify-between items-baseline accordion-item ">
+          <h3 className="flex flex-row-reverse items-center font-bold accordion-header">
+            {data.question}
+            <span className="-ml-4 text-xs mr-3 text-gray ">♦︎</span>
+          </h3>
+          <div className="px-4">
+            <SlArrowDown
+              className={`text-xl transition-all  "  ${
+                showQuestion && "rotate-180 "
+              } `}
+            />
+          </div>
+        </div>
+        <div
+          className={`flex gap-4 pl-10 py-8 overflow-hidden   ${
+            !showQuestion && "opacity-0 h-0"
+          }`}
+        >
+          <div className="h-auto  border-l-4 border-gray"> </div>
+          <p>{data.answer} </p>
+        </div>
+        <hr className="text-gray mt-2" />
+      </AnimationOnScroll>
     </div>
   );
 };

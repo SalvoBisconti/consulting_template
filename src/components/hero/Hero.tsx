@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
     <div className="relative top-0 h-screen w-screen " id="home">
-      <div className="z-10 absolute top-0 right-0 w-screen h-screen bg-[#0000004d]"></div>
-      <div className="w-screen h-screen absolute bg-fixed">
+      <div className="z-10 absolute top-0 right-0 w-full h-full bg-[#0000004d]"></div>
+      <div className="w-full h-full absolute bg-fixed">
         <video
           autoPlay
           loop

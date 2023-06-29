@@ -1,6 +1,7 @@
 import { Dispatch, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { SlArrowDown } from "react-icons/sl";
+import { onClickAbout } from "@/utils/func";
 
 const List = (props: {
   display: string;
@@ -37,7 +38,10 @@ const List = (props: {
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
         <div className="flex  justify-between items-baseline hover:text-gray">
-          <a className=" md:hover:underline underline-offset-8 " href="#home">
+          <a
+            className=" md:hover:underline underline-offset-8 "
+            onClick={(e) => onClickAbout(e, "home")}
+          >
             Home
           </a>
           <FaArrowRight className="md:hidden  text-xl" />
@@ -46,7 +50,10 @@ const List = (props: {
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
         <div className="flex  justify-between items-baseline hover:text-gray">
-          <a className=" md:hover:underline underline-offset-8" href="#chiSono">
+          <a
+            className=" md:hover:underline underline-offset-8"
+            onClick={(e) => onClickAbout(e, "chiSono")}
+          >
             Chi sono
           </a>
           <FaArrowRight className="md:hidden text-xl" />
@@ -82,7 +89,7 @@ const List = (props: {
           <li onClick={someFunction}>
             <a
               className="md:md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              href="#analisi"
+              onClick={(e) => onClickAbout(e, "analisi")}
             >
               Area analisi
             </a>
@@ -90,7 +97,7 @@ const List = (props: {
           <li onClick={someFunction}>
             <a
               className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              href="#pianificazione"
+              onClick={(e) => onClickAbout(e, "pianificazione")}
             >
               Area pianificazione
             </a>
@@ -98,7 +105,7 @@ const List = (props: {
           <li onClick={someFunction}>
             <a
               className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              href="#investimenti"
+              onClick={(e) => onClickAbout(e, "investimenti")}
             >
               Area investimenti
             </a>
@@ -106,7 +113,7 @@ const List = (props: {
           <li onClick={someFunction}>
             <a
               className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              href="#altro"
+              onClick={(e) => onClickAbout(e, "altro")}
             >
               Altro
             </a>
@@ -122,7 +129,10 @@ const List = (props: {
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
         <div className="flex  justify-between items-baseline hover:text-gray">
-          <a className="md:hover:underline underline-offset-8" href="#faq">
+          <a
+            className="md:hover:underline underline-offset-8"
+            onClick={(e) => onClickAbout(e, "faq")}
+          >
             FAQ
           </a>
           <FaArrowRight className="md:hidden  text-xl" />
@@ -131,7 +141,10 @@ const List = (props: {
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
         <div className="flex  justify-between items-baseline hover:text-gray">
-          <a className="md:hover:underline underline-offset-8" href="#contatti">
+          <a
+            className="md:hover:underline underline-offset-8"
+            onClick={(e) => onClickAbout(e, "contatti")}
+          >
             Contatti
           </a>
           <FaArrowRight className="md:hidden  text-xl" />
