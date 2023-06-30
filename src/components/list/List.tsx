@@ -61,12 +61,16 @@ const List = (props: {
       </li>
       <li className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="" onClick={onHandleChangeStatus}>
-          <div className="flex  justify-between items-baseline hover:text-gray  md:w-[88px]">
+        <div
+          className=""
+          onClick={onHandleChangeStatus}
+          // onMouseOver={onHandleChangeStatus}
+        >
+          <div className=" flex  justify-between items-baseline hover:text-gray  md:w-[88px] ">
             <a className="md:hover:underline underline-offset-8 relative cursor-pointer">
               Servizi
               <span
-                className={`hidden absolute  -right-7 top-1 md:-right-4 md:block md:top-0 transition-all cursor-pointer ${
+                className={`hidden absolute  -right-7 top-1 md:-right-4 md:block md:top-0 transition-all cursor-pointer  ${
                   showSubtitle &&
                   "rotate-180 -translate-y-2  md:-translate-y-1 "
                 } `}
@@ -80,45 +84,45 @@ const List = (props: {
               } `}
             />
           </div>
+          <ul
+            className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0   ${
+              !showSubtitle && " hidden  "
+            } ${scroll > 80 && "md:bg-first md:p-2 mdrounded"}`}
+          >
+            <li onClick={someFunction}>
+              <a
+                className="md:md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
+                onClick={(e) => onClickAbout(e, "analisi")}
+              >
+                Area analisi
+              </a>
+            </li>
+            <li onClick={someFunction}>
+              <a
+                className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
+                onClick={(e) => onClickAbout(e, "pianificazione")}
+              >
+                Area pianificazione
+              </a>
+            </li>
+            <li onClick={someFunction}>
+              <a
+                className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
+                onClick={(e) => onClickAbout(e, "investimenti")}
+              >
+                Area investimenti
+              </a>
+            </li>
+            <li onClick={someFunction}>
+              <a
+                className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
+                onClick={(e) => onClickAbout(e, "altro")}
+              >
+                Altro
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul
-          className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0   ${
-            !showSubtitle && " hidden"
-          } ${scroll > 80 && "md:bg-first md:p-2 mdrounded"}`}
-        >
-          <li onClick={someFunction}>
-            <a
-              className="md:md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              onClick={(e) => onClickAbout(e, "analisi")}
-            >
-              Area analisi
-            </a>
-          </li>
-          <li onClick={someFunction}>
-            <a
-              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              onClick={(e) => onClickAbout(e, "pianificazione")}
-            >
-              Area pianificazione
-            </a>
-          </li>
-          <li onClick={someFunction}>
-            <a
-              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              onClick={(e) => onClickAbout(e, "investimenti")}
-            >
-              Area investimenti
-            </a>
-          </li>
-          <li onClick={someFunction}>
-            <a
-              className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
-              onClick={(e) => onClickAbout(e, "altro")}
-            >
-              Altro
-            </a>
-          </li>
-        </ul>
         <div
           className={`absolute top-0 left-0 w-screen h-screen z-20  bg-transparent ${
             !showSubtitle && "hidden"

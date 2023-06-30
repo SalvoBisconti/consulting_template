@@ -1,9 +1,11 @@
-import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
-import DictionarySection from "@/components/dictionarySection";
 import AboutSection from "@/components/aboutSection";
-import ServiceSection from "@/components/serviceSection";
+import CarouselSection from "@/components/carouselSection";
+import DictionarySection from "@/components/dictionarySection";
 import FaqSection from "@/components/faqSection";
+import Hero from "@/components/hero";
+import Navbar from "@/components/navbar";
+import ServiceSection from "@/components/serviceSection";
+
 export default function Home() {
   return (
     <main>
@@ -13,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <FaqSection />
+      <CarouselSection />
     </main>
   );
 }
