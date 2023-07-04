@@ -11,7 +11,7 @@ const AboutSection = () => {
         animatePreScroll={false}
       >
         <div className="setPageContent md:w-[65vw] text-center ">
-          <h3 className="font-bold text-3xl text-first"> Chi sono ?</h3>
+          <h3 className="font-bold text-3xl text-first mb-10"> Chi sono ?</h3>
           <p className="">
             Sono Fabio Massi, classe 88, da sempre appassionato di mercati
             finanziari ed innovazioni, la mia famiglia si occupa da oltre 40
@@ -30,6 +30,11 @@ const AboutSection = () => {
             <li>🎓 L. Economia Bancaria Finanziaria ed Assicurativa</li>
             <li>🎓 LM. Economia e Management</li>
           </ul>
+          <img
+            src="/profile.png"
+            alt="Fabio Massi consulente finanziario"
+            className="absolute -right-20 md:-right-80  bottom-2 md:-bottom-12 w-[400px] md:w-[450px] brightness-0 invert -z-10 "
+          />
         </div>
       </AnimationOnScroll>
     </div>
