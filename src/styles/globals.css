@@ -6,7 +6,7 @@
 
 @layer components {
   .setPage {
-    @apply w-screen  flex justify-center items-center py-20 md:py-24;
+    @apply w-screen  flex justify-center items-center py-28 md:py-44;
   }
   .setPageContent {
     @apply relative flex flex-col w-[70vw]  justify-center  gap-3 text-xl;

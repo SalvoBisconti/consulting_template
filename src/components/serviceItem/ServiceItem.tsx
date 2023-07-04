@@ -7,7 +7,7 @@ const ServiceItem = (props: { data: serviceType }) => {
 
   return (
     <div
-      className="  w-screen flex flex-col content-baseline md:flex-row md:py-10 [&:nth-child(even)]:bg-second"
+      className="  w-screen flex flex-col content-baseline md:flex-row md:py-32 [&:nth-child(even)]:bg-second"
       id={data.linkWord}
     >
       <AnimationOnScroll
@@ -18,7 +18,7 @@ const ServiceItem = (props: { data: serviceType }) => {
       >
         <div className="h-[300px] w-[100%] md:h-auto md:w-[100%] group overflow-hidden">
           <img
-            src="https://picsum.photos/1200/900"
+            src={data.image}
             alt={data.alt}
             className=" object-cover  md:rounded-r-lg group-hover:scale-125 transition-all duration-300 "
           />

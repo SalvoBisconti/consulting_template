@@ -3,7 +3,7 @@ import "animate.css";
 
 const AboutSection = () => {
   return (
-    <div className="setPage " id="chiSono">
+    <div className="setPage bg-second  " id="chiSono">
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}

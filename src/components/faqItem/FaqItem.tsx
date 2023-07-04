@@ -12,7 +12,7 @@ const FaqItem = (props: { data: faqType }) => {
     setShowQuestion((prev) => !prev);
   };
   return (
-    <div className="cursor-pointer" onClick={onHandleShow}>
+    <div className="cursor-pointer " onClick={onHandleShow}>
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}
@@ -26,7 +26,7 @@ const FaqItem = (props: { data: faqType }) => {
           </h3>
           <div className="px-4">
             <SlArrowDown
-              className={`text-xl transition-all  "  ${
+              className={`text-xl transition-all   "  ${
                 showQuestion && "rotate-180 "
               } `}
             />

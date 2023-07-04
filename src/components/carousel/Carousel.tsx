@@ -1,30 +1,22 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 import CarouselItem from "../carouselItem";
 import { useState } from "react";
+import { SlArrowLeft } from "react-icons/sl";
+import { SlArrowRight } from "react-icons/sl";
+import { steps, stepsIndex } from "@/mocks/steps";
 
-export interface provaType {
-  id: number;
-  do: string;
-}
 const Carousel = () => {
-  const prova: provaType[] = [
-    {
-      id: 1,
-      do: "Check-up gratuito",
-    },
-    {
-      id: 2,
-      do: "Check-up pagamento",
-    },
-    {
-      id: 3,
-      do: "Check-up futtutu",
-    },
-    {
-      id: 4,
-      do: "Check-up futtutu",
-    },
-  ];
   const [carouselPosition, setCarouselPosition] = useState<number>(0);
+  // const [desktop, setDesktop] = useState<number>(0);
+  // if (typeof window !== "undefined") {
+  //   window.addEventListener("resize", function () {
+  //     useEffect(() => {
+  //       setDesktop(window.innerWidth);
+  //       console.log(desktop);
+  //     }, [desktop]);
+  //   });
+  // }
 
   const next = (): void =>
     carouselPosition > 2
@@ -36,17 +28,48 @@ const Carousel = () => {
       ? setCarouselPosition(3)
       : setCarouselPosition((prev) => prev - 1);
 
-  console.log(carouselPosition);
   return (
-    <div className="flex border-2 gap-4 ">
-      <button className="text-3xl self-center" onClick={prev}>
-        {"<"}
+    <div className="flex gap-4 w-[70vw] ">
+      <button
+        className="text-2xl self-center hover:text-gray md:hidden"
+        onClick={prev}
+      >
+        <SlArrowLeft />
       </button>
-      <div className="setPageContent border-2 h-[200px] border-red-500">
-        <CarouselItem data={prova[carouselPosition]} />
+      <div className="setPageContent h-[250px] md:h-auto md:w-full md:flex-row">
+        <AnimationOnScroll
+          animateIn="animate__fadeInUp"
+          animateOnce={true}
+          duration={1.5}
+          animatePreScroll={false}
+        >
+          <CarouselItem
+            data={steps[carouselPosition]}
+            display="flex md:hidden"
+          />
+        </AnimationOnScroll>
+
+        {stepsIndex.map((item, i) => (
+          <AnimationOnScroll
+            animateIn="animate__bounceInLeft"
+            delay={i * 200}
+            key={item}
+            animateOnce={true}
+            animatePreScroll={false}
+          >
+            <CarouselItem
+              data={steps[item]}
+              key={item}
+              display="hidden md:flex"
+            />
+          </AnimationOnScroll>
+        ))}
       </div>
-      <button className="text-3xl self-center" onClick={next}>
-        {">"}
+      <button
+        className="text-2xl self-center hover:text-gray md:hidden"
+        onClick={next}
+      >
+        <SlArrowRight />
       </button>
     </div>
   );

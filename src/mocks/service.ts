@@ -8,6 +8,7 @@ export interface serviceType {
   id: number;
   linkWord: string;
   title: string;
+  image: string;
   alt: string;
   text: arrayType[];
 }
@@ -17,6 +18,7 @@ export const service: serviceType[] = [
     id: 1,
     title: "Area analisi",
     linkWord: "analisi",
+    image: "/images/analisi.jpg",
     alt: "Analisi finanziaria",
     text: [
       {
@@ -55,6 +57,7 @@ export const service: serviceType[] = [
     id: 2,
     title: "Area pianificazione",
     linkWord: "pianificazione",
+    image: "/images/pianificazione.jpg",
     alt: "Pianificazione finanziaria",
     text: [
       {
@@ -91,6 +94,7 @@ export const service: serviceType[] = [
     id: 3,
     title: "Area investimenti",
     linkWord: "investimenti",
+    image: "/images/investimenti.jpg",
     alt: "investimenti finanziari",
     text: [
       {
@@ -121,8 +125,8 @@ export const service: serviceType[] = [
     id: 4,
     title: "Altro",
     linkWord: "altro",
+    image: "/images/altro.jpg",
     alt: "bitcoin, crypto",
-
     text: [
       {
         id: 1,

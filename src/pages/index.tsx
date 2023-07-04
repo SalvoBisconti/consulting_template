@@ -8,14 +8,14 @@ import ServiceSection from "@/components/serviceSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col">
       <Navbar />
       <Hero />
       <DictionarySection />
+      <CarouselSection />
       <AboutSection />
       <ServiceSection />
       <FaqSection />
-      <CarouselSection />
     </main>
   );
 }
