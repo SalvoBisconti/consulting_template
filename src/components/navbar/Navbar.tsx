@@ -32,7 +32,7 @@ const Navbar = () => {
       <img
         src="/logo.png"
         alt="invertir.fm di Fabio Massi logo"
-        className="w-[70px]"
+        className="w-[110px]"
       />
       <button className="group md:hidden z-30" onClick={onHandleClick}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4  duration-200 shadow-md ring-gray ">
