@@ -17,7 +17,7 @@ const Footer = () => {
         duration={1.5}
         animatePreScroll={false}
       >
-        <div className="flex flex-col items-center gap-9 md:flex-row md:justify-between md:w-[90vw] ">
+        <div className="flex flex-col items-center gap-9 md:flex-row md:justify-around md:w-[100vw] ">
           <h1 className="text-xl font-bold"> INVERTIR DI FABIO MASSI</h1>
           <div className="flex flex-col  items-center  gap-2">
             <h3>SOCIAL</h3>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="hover:text-gray">
-                <Link href="mailto:fabio@gmail.com" target="_blank">
+                <Link href="mailto:cfautonomo@proton.me" target="_blank">
                   <SiGmail />
                 </Link>
               </li>
@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="flex flex-col  items-center  gap-2">
             <h3> INDIRIZZO</h3>
             <p className="text-zinc-400">
-              Via delle strade 10 , Civitanova Marche
+              Via Fogazzaro 20 - Civitanova Marche (MC) - CAP 62012
             </p>
           </div>
           <div className="flex flex-col  items-center  gap-2">
@@ -50,9 +50,30 @@ const Footer = () => {
             <p className="text-zinc-400">Cellulare: +39 3203030303</p>
           </div>
         </div>
-        <p className="text-[14px]  text-center md:text-base md:mt-16">
-          Copyright © 2023 | All rights reserved | Fabio Massi P.IVA: 4747494
-        </p>
+        <div className="text-[14px] w-screen flex flex-col  items-center mt-10  md:text-base md:mt-16">
+          <p>
+            Copyright © 2023 | All rights reserved | Fabio Massi P.IVA: 4747494
+          </p>
+          <ul className="flex gap-2  ">
+            <li className="hover:text-gray">
+              <Link
+                href="https://www.iubenda.com/privacy-policy/51891474/cookie-policy"
+                target="_blank"
+              >
+                Cookie Policy
+              </Link>
+            </li>
+            <li> {"|"}</li>
+            <li className="hover:text-gray">
+              <Link
+                href="https://www.iubenda.com/privacy-policy/51891474"
+                target="_blank"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+          </ul>
+        </div>
       </AnimationOnScroll>
     </div>
   );

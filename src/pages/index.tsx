@@ -7,6 +7,7 @@ import Hero from "@/components/hero";
 import InfoSection from "@/components/infoSection";
 import Navbar from "@/components/navbar";
 import ServiceSection from "@/components/serviceSection";
+import WordsSection from "@/components/wordsSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <DictionarySection />
+      <WordsSection />
       <CarouselSection />
       <AboutSection />
       <ServiceSection />

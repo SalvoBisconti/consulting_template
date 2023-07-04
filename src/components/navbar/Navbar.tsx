@@ -29,7 +29,11 @@ const Navbar = () => {
         scroll > 80 && " bg-first  fixed "
       }`}
     >
-      <h2 className="text-white">LOGO </h2>
+      <img
+        src="/logo.png"
+        alt="invertir.fm di Fabio Massi logo"
+        className="w-[70px]"
+      />
       <button className="group md:hidden z-30" onClick={onHandleClick}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4  duration-200 shadow-md ring-gray ">
           <div className="flex flex-col justify-between w-[24px] h-[24px] transform transition-all duration-300 origin-center overflow-hidden ">
