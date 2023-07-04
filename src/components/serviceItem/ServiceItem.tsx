@@ -20,7 +20,7 @@ const ServiceItem = (props: { data: serviceType }) => {
           <img
             src={data.image}
             alt={data.alt}
-            className=" object-cover  md:rounded-r-lg group-hover:scale-125 transition-all duration-300 "
+            className=" object-cover  md:rounded-r-lg group-hover:scale-105 transition-all duration-300 "
           />
         </div>
       </AnimationOnScroll>

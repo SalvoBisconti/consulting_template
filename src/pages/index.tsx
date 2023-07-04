@@ -3,6 +3,7 @@ import CarouselSection from "@/components/carouselSection";
 import DictionarySection from "@/components/dictionarySection";
 import FaqSection from "@/components/faqSection";
 import Hero from "@/components/hero";
+import InfoSection from "@/components/infoSection";
 import Navbar from "@/components/navbar";
 import ServiceSection from "@/components/serviceSection";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSection />
       <ServiceSection />
       <FaqSection />
+      <InfoSection />
     </main>
   );
 }
