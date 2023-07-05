@@ -30,6 +30,7 @@ module.exports = {
         second: "#F0F0F0",
         background: "#F8F9FA",
         gray: "#C0C0C0",
+        strongGray: "#71797E",
       },
     },
   },

@@ -8,15 +8,6 @@ import { steps, stepsIndex } from "@/mocks/steps";
 
 const Carousel = () => {
   const [carouselPosition, setCarouselPosition] = useState<number>(0);
-  // const [desktop, setDesktop] = useState<number>(0);
-  // if (typeof window !== "undefined") {
-  //   window.addEventListener("resize", function () {
-  //     useEffect(() => {
-  //       setDesktop(window.innerWidth);
-  //       console.log(desktop);
-  //     }, [desktop]);
-  //   });
-  // }
 
   const next = (): void =>
     carouselPosition > 2
@@ -29,14 +20,14 @@ const Carousel = () => {
       : setCarouselPosition((prev) => prev - 1);
 
   return (
-    <div className="flex gap-4 w-[70vw] ">
+    <div className="flex gap-4 w-[70vw]  ">
       <button
         className="text-2xl self-center hover:text-gray md:hidden"
         onClick={prev}
       >
         <SlArrowLeft />
       </button>
-      <div className="setPageContent h-[250px] md:h-auto md:w-full md:flex-row">
+      <div className="setPageContent h-[250px]  md:h-auto md:w-full md:flex-row ">
         <AnimationOnScroll
           animateIn="animate__fadeInUp"
           animateOnce={true}
