@@ -10,9 +10,12 @@ const AboutSection = () => {
         duration={1.5}
         animatePreScroll={false}
       >
-        <div className="setPageContent md:w-[65vw] text-center ">
-          <h3 className="font-bold text-3xl text-first mb-10"> Chi sono ?</h3>
-          <p className="">
+        <div className="setPageContent md:w-[65vw] text-center md:text-pDesk ">
+          <h3 className="font-bold text-3xl text-first mb-10 md:text-titleDesk">
+            {" "}
+            Chi sono ?
+          </h3>
+          <p>
             Sono Fabio Massi, classe 88, da sempre appassionato di mercati
             finanziari ed innovazioni, la mia famiglia si occupa da oltre 40
             anni di consulenza assicurativa e finanziaria a privati ed aziende,

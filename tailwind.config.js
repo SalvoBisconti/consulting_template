@@ -32,6 +32,10 @@ module.exports = {
         gray: "#C0C0C0",
         strongGray: "#71797E",
       },
+      fontSize: {
+        pDesk: "1.5rem",
+        titleDesk: "1.8rem",
+      },
     },
   },
   plugins: [],

@@ -23,7 +23,7 @@ const DictionarySection = () => {
           </h2>
 
           <h4> [ in·ver·tì·re ] verbo </h4>
-          <p className="italic text-[#484848] font-serif">
+          <p className="italic text-[#484848] font-serif md:text-pDesk ">
             1. Volgere o dirigere nel verso contrario: i. il moto, la marcia; i.
             la rotta di una nave, di un aeromobile, far prendere alla nave,
             all’aeromobile la direzione opposta a quella fino allora seguita;

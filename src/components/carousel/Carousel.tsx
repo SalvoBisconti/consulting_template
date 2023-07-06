@@ -20,7 +20,7 @@ const Carousel = () => {
       : setCarouselPosition((prev) => prev - 1);
 
   return (
-    <div className="flex gap-4 w-[70vw]  ">
+    <div className="flex gap-4 w-[70vw] ">
       <button
         className="text-2xl self-center hover:text-gray md:hidden"
         onClick={prev}

@@ -32,10 +32,10 @@ const ServiceItem = (props: { data: serviceType }) => {
       >
         <div className=" flex justify-center content-center h-[100%]  ">
           <div className="shadow-xl  w-[90vw] h-auto self-center bg-white rounded-lg z-10 -translate-y-12 md:translate-y-0 md:w-[50vw]  md:-translate-x-14 ">
-            <h2 className="text-center text-3xl pt-5 font-bold text-first">
+            <h2 className="text-center text-3xl md:text-titleDesk pt-5 font-bold text-first">
               {data.title}
             </h2>
-            <ul className=" p-8 ">
+            <ul className=" p-8 md:text-xl ">
               {data.text.map((item) => {
                 return (
                   <li key={item.id} className="pb-4 ">
@@ -47,7 +47,7 @@ const ServiceItem = (props: { data: serviceType }) => {
                     <h3 className="font-bold w-[100%] inline">
                       {item.subtitle}{" "}
                     </h3>
-                    <p className="inline">{item.content}</p>
+                    <p className="inline ">{item.content}</p>
                   </li>
                 );
               })}
