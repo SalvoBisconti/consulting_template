@@ -11,7 +11,7 @@ const Hero = () => {
           playsInline
           className="absolute w-full h-full object-cover bg-fixed object-right"
         >
-          <source src="./video-hero.mp4" type="video/webm; codecs=vp9" />
+          <source src="./video-hero.mp4" type="video/mp4; codecs=vp9" />
         </video>
       </div>
     </div>
