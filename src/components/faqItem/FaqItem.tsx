@@ -11,8 +11,9 @@ const FaqItem = (props: { data: faqType }) => {
   const onHandleShow = (): void => {
     setShowQuestion((prev) => !prev);
   };
+
   return (
-    <div className="cursor-pointer " onClick={onHandleShow}>
+    <div className="cursor-pointer ">
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}
@@ -20,11 +21,14 @@ const FaqItem = (props: { data: faqType }) => {
         animatePreScroll={false}
       >
         <div className="flex justify-between items-baseline accordion-item ">
-          <h3 className="flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk">
+          <h3
+            className="flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk"
+            onClick={onHandleShow}
+          >
             {data.question}
             <span className="-ml-4 text-xs mr-3 text-gray ">♦︎</span>
           </h3>
-          <div className="px-4">
+          <div className="px-4" onClick={onHandleShow}>
             <SlArrowDown
               className={`text-xl transition-all   "  ${
                 showQuestion && "rotate-180 "

@@ -12,7 +12,7 @@ const Footer = () => {
       id="contatti"
     >
       <AnimationOnScroll
-        animateIn="animate__fadeInUp"
+        animateIn="animate__zoomIn"
         animateOnce={true}
         duration={1.5}
         animatePreScroll={false}
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  items-center  gap-2">
             <h3> INDIRIZZO</h3>
-            <p className="text-zinc-400">
+            <p className="text-zinc-400 px-8 text-center md:px-0">
               Via Fogazzaro 20 - Civitanova Marche (MC) - CAP 62012
             </p>
           </div>
@@ -50,11 +50,11 @@ const Footer = () => {
             <p className="text-zinc-400">Cellulare: +39 3203030303</p>
           </div>
         </div>
-        <div className="text-[14px] w-screen flex flex-col  items-center mt-10  md:text-base md:mt-16">
+        <div className="text-[14px] w-screen flex flex-col px-8 items-center mt-10 md:px-0 md:text-base md:mt-16 text-center">
           <p>
             Copyright © 2023 | All rights reserved | Fabio Massi P.IVA: 4747494
           </p>
-          <ul className="flex gap-2  ">
+          <ul className="flex gap-2 ">
             <li className="hover:text-gray">
               <Link
                 href="https://www.iubenda.com/privacy-policy/51891474/cookie-policy"
