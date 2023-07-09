@@ -12,12 +12,19 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=**Bitter**"
           rel="stylesheet"
         />
+        <meta
+          name="keywords"
+          content="Fabio Massi, Civitanova Marche, Consulente finanziario, Consulente finanziario indipendente "
+        />
+        <meta
+          name="description"
+          content="Invertir di Fabio Massi - Sono Fabio Massi, da sempre appassionato di mercati finanziari ed innovazioni ..."
+        />
+        <meta
+          name="generator"
+          content="Invertir di Fabio Massi - Consulente finanziario indipendente"
+        />
       </Head>
-      {/* <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="joomla, Joomla" />
-  <meta name="description" content="Joomla! - the dynamic portal engine and content management system" />
-  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" /> */}
       <body>
         <Main />
         <NextScript />

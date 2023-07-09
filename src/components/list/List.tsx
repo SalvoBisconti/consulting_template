@@ -61,11 +61,7 @@ const List = (props: {
       </li>
       <li className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div
-          className=""
-          onClick={onHandleChangeStatus}
-          // onMouseOver={onHandleChangeStatus}
-        >
+        <div className="" onClick={onHandleChangeStatus}>
           <div className=" flex  justify-between items-baseline hover:text-gray  md:w-[88px] ">
             <a className="md:hover:underline underline-offset-8 relative cursor-pointer">
               Servizi
@@ -79,7 +75,7 @@ const List = (props: {
               </span>
             </a>
             <SlArrowDown
-              className={`md:hidden text-xl  transition-all"  ${
+              className={`md:hidden text-xl  transition-all "  ${
                 showSubtitle && "rotate-180 "
               } `}
             />
