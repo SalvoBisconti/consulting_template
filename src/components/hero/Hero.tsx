@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="z-10 absolute top-0 right-0 w-full h-full bg-[#0000004d]"></div>
       <div className="w-full h-full absolute bg-fixed">
         <video
-          preload="true"
+          preload="auto"
           autoPlay
           loop
           controls
