@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="w-full h-full absolute bg-fixed">
         <video
           preload="true"
-          autoPlay
+          autoPlay={true}
           loop
           muted
           playsInline
