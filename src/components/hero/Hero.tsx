@@ -4,16 +4,12 @@ const Hero = () => {
       <div className="z-10 absolute top-0 right-0 w-full h-full bg-[#0000004d]"></div>
       <div className="w-full h-full absolute bg-fixed">
         <video
-          // preload="auto"
-          // autoPlay
-          // loop
-          // controls
-          // muted
-          // playsInline
-          loop={true}
-          muted={true}
-          autoPlay={true}
-          playsInline={true}
+          preload="auto"
+          autoPlay
+          loop
+          controls
+          muted
+          playsInline
           className="absolute w-full h-full object-cover bg-fixed object-right"
         >
           <source src="./video/hero.mp4" type="video/mp4" />
