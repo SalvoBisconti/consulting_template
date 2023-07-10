@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`h-[60px] bg-trasparent fixed w-screen p-3  flex justify-between items-center transition-all duration-700 z-20 ${
+      className={`h-[60px] bg-trasparent fixed w-screen p-3 flex justify-between items-center transition-all duration-700 z-20 ${
         scroll > 80 && " bg-first  fixed "
       }`}
     >
@@ -34,7 +34,7 @@ const Navbar = () => {
         alt="invertir.fm di Fabio Massi logo"
         className="w-[110px]"
       />
-      <button className="group md:hidden z-30" onClick={onHandleClick}>
+      <button className="group md:hidden z-30 " onClick={onHandleClick}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4  duration-200 shadow-md ring-gray ">
           <div className="flex flex-col justify-between w-[24px] h-[24px] transform transition-all duration-300 origin-center overflow-hidden ">
             <div

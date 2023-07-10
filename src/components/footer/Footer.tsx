@@ -33,7 +33,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="hover:text-gray">
-                <Link href="" target="_blank">
+                <Link
+                  href="https://wa.me/393518424799/?text=Ciao Fabio, quando sarebbe possibile prenotare una consulenza?"
+                  target="_blank"
+                >
                   <IoLogoWhatsapp />
                 </Link>
               </li>
