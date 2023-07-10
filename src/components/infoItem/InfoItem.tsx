@@ -23,7 +23,9 @@ const InfoItem = (props: { data: infoType }) => {
       >
         <div className="flex justify-between items-baseline accordion-item ">
           <h3
-            className="flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk "
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk h-[120px]  ${
+              showInfo && "h-[80px]"
+            }`}
             onClick={onHandleShowInfo}
           >
             {data.title}
@@ -39,7 +41,7 @@ const InfoItem = (props: { data: infoType }) => {
         </div>
         <div
           className={`flex flex-col gap-4 pl-10 py-8 overflow-hidden   ${
-            !showInfo && "opacity-0 h-0"
+            !showInfo && "hidden"
           }`}
         >
           <div className="h-auto  border-l-4 border-gray "> </div>

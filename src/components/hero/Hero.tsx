@@ -7,7 +7,6 @@ const Hero = () => {
           preload="auto"
           autoPlay
           loop
-          controls
           muted
           playsInline
           className="absolute w-full h-full object-cover bg-fixed object-right"

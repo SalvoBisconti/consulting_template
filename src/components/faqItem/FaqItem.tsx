@@ -22,7 +22,9 @@ const FaqItem = (props: { data: faqType }) => {
       >
         <div className="flex justify-between items-baseline accordion-item ">
           <h3
-            className="flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk"
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk  h-[140px] ${
+              showQuestion && "h-[100px]"
+            }`}
             onClick={onHandleShow}
           >
             {data.question}
@@ -38,7 +40,7 @@ const FaqItem = (props: { data: faqType }) => {
         </div>
         <div
           className={`flex gap-4 pl-10 py-8 overflow-hidden   ${
-            !showQuestion && "opacity-0 h-0"
+            !showQuestion && "hidden"
           }`}
         >
           <div className="h-auto  border-l-4 border-gray"> </div>
