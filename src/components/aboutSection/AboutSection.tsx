@@ -1,5 +1,6 @@
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
+import Image from "next/image";
 
 const AboutSection = () => {
   return (
@@ -30,8 +31,27 @@ const AboutSection = () => {
 
           <h3 className="font-bold mt-5"> Percorso di studi:</h3>
           <ul className="md:flex justify-between ">
-            <li>🎓 L. Economia Bancaria Finanziaria ed Assicurativa</li>
-            <li>🎓 LM. Economia e Management</li>
+            <li>
+              <Image
+                src="/images/graduated.png"
+                className="inline mr-2"
+                width={35}
+                height={35}
+                alt="Laurea"
+              />
+              L. Economia Bancaria Finanziaria ed Assicurativa
+            </li>
+            <li>
+              {" "}
+              <Image
+                src="/images/graduated.png"
+                className="inline mr-2"
+                width={35}
+                height={35}
+                alt="Laurea"
+              />
+              LM. Economia e Management
+            </li>
           </ul>
           <img
             src="/profile.png"
