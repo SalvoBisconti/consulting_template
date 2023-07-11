@@ -37,25 +37,21 @@ const List = (props: {
     >
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="flex  justify-between items-baseline hover:text-gray">
-          <a
-            className=" md:hover:underline underline-offset-8 "
-            onClick={(e) => onClickAbout(e, "home")}
-          >
-            Home
-          </a>
+        <div
+          className="flex  justify-between items-baseline hover:text-gray"
+          onClick={(e) => onClickAbout(e, "home")}
+        >
+          <a className=" md:hover:underline underline-offset-8 ">Home</a>
           <FaArrowRight className="md:hidden  text-xl" />
         </div>
       </li>
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="flex  justify-between items-baseline hover:text-gray">
-          <a
-            className=" md:hover:underline underline-offset-8"
-            onClick={(e) => onClickAbout(e, "chiSono")}
-          >
-            Chi sono
-          </a>
+        <div
+          className="flex  justify-between items-baseline hover:text-gray"
+          onClick={(e) => onClickAbout(e, "chiSono")}
+        >
+          <a className=" md:hover:underline underline-offset-8">Chi sono</a>
           <FaArrowRight className="md:hidden text-xl" />
         </div>
       </li>
@@ -128,25 +124,21 @@ const List = (props: {
       </li>
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="flex  justify-between items-baseline hover:text-gray">
-          <a
-            className="md:hover:underline underline-offset-8"
-            onClick={(e) => onClickAbout(e, "faq")}
-          >
-            FAQ
-          </a>
+        <div
+          className="flex  justify-between items-baseline hover:text-gray"
+          onClick={(e) => onClickAbout(e, "faq")}
+        >
+          <a className="md:hover:underline underline-offset-8">FAQ</a>
           <FaArrowRight className="md:hidden  text-xl" />
         </div>
       </li>
       <li onClick={onHandleClose} className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="flex  justify-between items-baseline hover:text-gray">
-          <a
-            className="md:hover:underline underline-offset-8"
-            onClick={(e) => onClickAbout(e, "contatti")}
-          >
-            Contatti
-          </a>
+        <div
+          className="flex  justify-between items-baseline hover:text-gray"
+          onClick={(e) => onClickAbout(e, "contatti")}
+        >
+          <a className="md:hover:underline underline-offset-8">Contatti</a>
           <FaArrowRight className="md:hidden  text-xl" />
         </div>
         <hr className="w-[95vw] p-1 md:hidden" />
