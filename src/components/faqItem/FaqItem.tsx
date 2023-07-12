@@ -22,7 +22,7 @@ const FaqItem = (props: { data: faqType }) => {
       >
         <div className="flex justify-between items-baseline accordion-item ">
           <h3
-            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk  h-[140px] ${
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl  h-[140px] ${
               showQuestion && "h-[100px]"
             }`}
             onClick={onHandleShow}

@@ -23,7 +23,7 @@ const InfoItem = (props: { data: infoType }) => {
       >
         <div className="flex justify-between items-baseline accordion-item ">
           <h3
-            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-titleDesk h-[120px]  ${
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl h-[120px]  ${
               showInfo && "h-[80px]"
             }`}
             onClick={onHandleShowInfo}
