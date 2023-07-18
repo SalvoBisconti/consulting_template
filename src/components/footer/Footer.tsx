@@ -50,7 +50,9 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  items-center  gap-2">
             <h3> RECAPITI TELEFONICI</h3>
-            <p className="text-zinc-400">Cellulare: +39 3203030303</p>
+            <Link className="text-zinc-400" href="tel:+393518424799">
+              Cellulare: +39 3518424799
+            </Link>
           </div>
         </div>
         <div className="text-[14px] w-screen flex flex-col px-8 items-center mt-10 md:px-0 md:text-base md:mt-16 text-center">
