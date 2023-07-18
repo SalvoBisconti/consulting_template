@@ -94,7 +94,7 @@ export const service: serviceType[] = [
     id: 3,
     title: "Area investimenti",
     linkWord: "investimenti",
-    image: "/images/areaInvestimenti.jpg",
+    image: "./images/areaInvestimenti.jpg",
     alt: "investimenti finanziari",
     text: [
       {
