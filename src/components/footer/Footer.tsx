@@ -23,7 +23,10 @@ const Footer = () => {
             <h3>SOCIAL</h3>
             <ul className="flex gap-5 text-2xl  ">
               <li className="hover:text-gray ">
-                <Link href="" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/fabio-massi-7b755112a/"
+                  target="_blank"
+                >
                   <AiFillLinkedin />
                 </Link>
               </li>
