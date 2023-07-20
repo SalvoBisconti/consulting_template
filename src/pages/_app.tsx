@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="author" content="Salvatore Bisconti" />
-        <meta http-equiv="Reply-to" content="salvatorebisconti98@gmail.com" />
-        <meta http-equiv="content-language" content="IT" />
+        <meta httpEquiv="Reply-to" content="salvatorebisconti98@gmail.com" />
+        <meta httpEquiv="content-language" content="IT" />
         <meta
           name="keywords"
           content="Fabio Massi, Civitanova Marche, Consulente finanziario, Invertir di Fabio Massi, consulenza, consulente finanziario a civitanova, consulenza finanziaria "
