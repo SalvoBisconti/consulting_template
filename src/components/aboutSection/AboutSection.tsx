@@ -42,7 +42,6 @@ const AboutSection = () => {
               L. Economia Bancaria Finanziaria ed Assicurativa
             </li>
             <li>
-              {" "}
               <Image
                 src="/images/graduated.png"
                 className="inline mr-2"
