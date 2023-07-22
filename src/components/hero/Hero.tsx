@@ -1,20 +1,18 @@
-import { useEffect, useRef } from "react";
 const Hero = () => {
-  const videoCurrent = useRef<HTMLVideoElement | null>(null);
-  useEffect(() => {
-    if (videoCurrent.current) {
-      videoCurrent.current.play().catch(() => {
-        if (videoCurrent.current) videoCurrent.current.controls = true;
-      });
-    }
-  }, []);
+  const videoElement: any = document.getElementById("video");
+  videoElement
+    .play()
+    .then(() => {})
+    .catch((error: any) => {
+      videoElement.setAttribute("controls", "controls");
+    });
 
   return (
     <div className="relative top-0 h-screen w-screen flex " id="home">
       <div className="z-10 absolute top-0 right-0 w-full h-full bg-[#0000004d]"></div>
       <div className="w-full h-full absolute bg-fixed">
         <video
-          ref={videoCurrent}
+          id="video"
           preload="auto"
           autoPlay
           loop
