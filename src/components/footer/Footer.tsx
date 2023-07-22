@@ -68,7 +68,7 @@ const Footer = () => {
             <h3> RECAPITI TELEFONICI</h3>
             <button
               className="text-zinc-400"
-              onClick={() => linkTo("tel:+393518424799", "")}
+              onClick={() => linkTo("tel:+393518424799", "_self")}
             >
               Cellulare: +39 3518424799
             </button>
