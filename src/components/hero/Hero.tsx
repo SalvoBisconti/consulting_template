@@ -1,15 +1,11 @@
-import { useEffect } from "react";
-
 const Hero = () => {
-  useEffect(() => {
-    const videoElement: any = document.getElementById("video");
-    videoElement
-      .play()
-      .then(() => {})
-      .catch((error: any) => {
-        videoElement.setAttribute("controls", "controls");
-      });
-  }, []);
+  const videoElement: any = document.getElementById("video");
+  videoElement
+    .play()
+    .then(() => {})
+    .catch((error: any) => {
+      videoElement.setAttribute("controls", "controls");
+    });
 
   return (
     <div className="relative top-0 h-screen w-screen flex " id="home">
