@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Invertir di Fabio Massi - Consulente finanziario indipendente"
         />
         <meta name="robots" content="index,nofollow" />
-        <meta name="theme-color" content="#F0F0F0" />
+        <meta name="theme-color" content="#28282B" />
       </Head>
       <Component {...pageProps} />
     </>
