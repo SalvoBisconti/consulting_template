@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta httpEquiv="content-language" content="IT" />
         <meta
           name="keywords"
-          content="Fabio Massi, Civitanova Marche, Consulente finanziario, Invertir di Fabio Massi, consulenza, consulente finanziario a civitanova, consulenza finanziaria "
+          content="Fabio Massi, Civitanova Marche, Consulente finanziario, Invertir di Fabio Massi, consulenza, consulente finanziario a civitanova, consulenza finanziaria, invertir Fabio Massi, civitanova marche consulente finanziario, consultente finanziario marche  "
         />
         <meta
           name="description"
