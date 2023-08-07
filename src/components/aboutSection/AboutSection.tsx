@@ -3,7 +3,7 @@ import "animate.css";
 import Image from "next/image";
 
 const AboutSection = () => {
-  const array = [
+  const degreeText = [
     " L. Economia bancaria finanziaria ed assicurativa",
     "LM. Economia e management",
   ];
@@ -36,7 +36,7 @@ const AboutSection = () => {
 
           <h3 className="font-bold mt-5"> Percorso di studi:</h3>
           <ul className="md:flex justify-between text-justify ">
-            {array.map((element) => {
+            {degreeText.map((element) => {
               return (
                 <li className="flex gap-2 text-start">
                   <div className="flex items-center">
